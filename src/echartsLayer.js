@@ -12,7 +12,7 @@ define([
 		chartOption: null,
 		visible: true,
 		constructor: function (view, option) {
-
+			//如果在服务器上使用该代码  可以将echart对象传入到option中
 			echarts.registerCoordinateSystem('arcgis', this.getE3CoordinateSystem(view));
 			this.init(view, option);
 		},
